@@ -1,0 +1,22 @@
+ Kubectl get all -n namespace
+ kubectl get all
+ You will check status of each resource
+ Kubectl describe po -n namespacename
+ Kubectl describe po podname -n namespacename
+ Check events section which comes in the last line
+ Kubectl describe po pod name -n namespace| grep Reason -A5
+ Kubectl exec -it pod name —bash
+ Kubectl logs -f —tail=10 podname
+Kubectl logs -f nginx
+Kubectl create service - kubectl create service nodeport (name of service) --tcp 80:80
+Expose node port service publicly
+Kubectl expose deployment (name of deployment file) --type=LoadBalancer --name=servicename
+
+Docker Command - 
+Sudo yum install docker
+Sudo service docker start
+Sudo docker container ls
+Sudo docker container ls -a
+Docker rmi (name or name:version)
+Docker run -d --name= new name -p 80:80 -it(name)
+
