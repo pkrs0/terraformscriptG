@@ -5,7 +5,7 @@
  Kubectl describe po podname -n namespacename
  Check events section which comes in the last line
  Kubectl describe po pod name -n namespace| grep Reason -A5
- Kubectl exec -it pod name —bash
+ Kubectl exec -it pod name bash
  Kubectl logs -f —tail=10 podname
 Kubectl logs -f nginx
 Kubectl create service - kubectl create service nodeport (name of service) --tcp 80:80
